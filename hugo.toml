@@ -13,7 +13,6 @@ pagerSize = 3
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
-  footer = []
 
 [taxonomies]
   tag = "tags"
@@ -21,13 +20,6 @@ pagerSize = 3
   author = "authors"
   series = "series"
   topic = "topics"
-
-# Explicitly prevent the footer section from generating any output
-[outputFormats.footerSection]
-  # Empty configuration to prevent any output
-
-# Specifically disable generation of these kinds for the footer content
-disableKinds = ["footerSection"]
 
 [module]
 [[module.imports]]
@@ -147,12 +139,6 @@ disableClasses = false
 disableIDs = false
 disableTags = false
 enable = true
-
-# Language selector visibility — disabled since only English is available
-# [params.languages.selector.disable]
-# footer = false
-# header = false
-# mobileHeader = false
 
 [languages]
 [languages.en]
