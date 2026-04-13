@@ -331,13 +331,6 @@
       <description>&lt;h2 id=&#34;1st-job-junior-intern&#34;&gt;1st job: Junior Intern&lt;/h2&gt;&#xA;&lt;p&gt;The beginning of a great career. As a Junior Intern at Internet Affairs Inc., I had the opportunity to work on various projects that helped me develop my technical and professional skills. Working alongside experienced developers, I contributed to the company&amp;rsquo;s core web applications and learned industry best practices in software development.&lt;/p&gt;&#xA;&lt;p&gt;During my internship, I took the initiative to create an internal documentation wiki that improved knowledge sharing across teams. This project taught me valuable lessons in technical writing and collaboration. I also participated in code reviews and daily stand-ups, gaining firsthand experience in agile development methodologies.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Buscar</title>
-      <link>http://localhost:1313/portfolioHugo/es/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolioHugo/es/search/</guid>
-      <description>search</description>
-    </item>
-    <item>
       <title>Footer</title>
       <link>http://localhost:1313/portfolioHugo/footer/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

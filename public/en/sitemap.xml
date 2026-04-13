@@ -15,11 +15,6 @@
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/"
                 />
@@ -60,11 +55,6 @@
                 rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -149,11 +139,6 @@
     <lastmod>2024-12-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/experience/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/portfolioHugo/fr/experience/"
                 />
@@ -167,11 +152,6 @@
     <lastmod>2024-12-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/experience/job-3/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/portfolioHugo/fr/experience/job-3/"
                 />
@@ -180,6 +160,9 @@
                 hreflang="en"
                 href="http://localhost:1313/portfolioHugo/experience/job-3/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/portfolioHugo/experience/job-3.es/</loc>
+    <lastmod>2024-12-01T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/testimonial/graziella-nutella/</loc>
     <lastmod>2024-11-25T21:53:18+01:00</lastmod>
@@ -245,16 +228,6 @@
     <lastmod>2024-06-21T14:38:33+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/portfolioHugo/fr/authors/"
                 />
@@ -262,6 +235,11 @@
                 rel="alternate"
                 hreflang="he"
                 href="http://localhost:1313/portfolioHugo/he/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/portfolioHugo/ar/authors/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -353,11 +331,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/experience/job-2/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/portfolioHugo/experience/job-2/"
                 />
@@ -374,11 +347,6 @@
                 rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -399,13 +367,11 @@
     <loc>http://localhost:1313/portfolioHugo/blog/hugo-basics-part-1/</loc>
     <lastmod>2023-01-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/portfolioHugo/blog/_index.es/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/portfolioHugo/blog/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/blog/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="he"
@@ -422,31 +388,20 @@
                 href="http://localhost:1313/portfolioHugo/blog/"
                 />
   </url><url>
+    <loc>http://localhost:1313/portfolioHugo/experience/job-2.es/</loc>
+    <lastmod>2023-01-01T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/portfolioHugo/experience/job-1/</loc>
     <lastmod>2022-12-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/experience/job-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/experience/job-1/"
-                />
   </url><url>
-    <loc>http://localhost:1313/portfolioHugo/es/search/</loc>
+    <loc>http://localhost:1313/portfolioHugo/experience/job-1.es/</loc>
+    <lastmod>2022-01-01T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -464,99 +419,21 @@
                 href="http://localhost:1313/portfolioHugo/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/portfolioHugo/es/</loc>
+    <loc>http://localhost:1313/portfolioHugo/experience/_index.es/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolioHugo/footer/footer.es/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/footer/footer/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/footer/footer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/footer/footer/"
-                />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/footer/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/footer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/footer/"
-                />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/home/home/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="he"
-                href="http://localhost:1313/portfolioHugo/he/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/home/home/"
-                />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/home/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="he"
-                href="http://localhost:1313/portfolioHugo/he/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/home/"
-                />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/cv/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/search/"
-                />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/search-optout/</loc>
   </url><url>
@@ -575,11 +452,6 @@
                 rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/topics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/topics/"
                 />
     <xhtml:link
                 rel="alternate"

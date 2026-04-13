@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/"
                 />
@@ -32,11 +27,6 @@
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/he/blog/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/blog/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -61,18 +51,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/authors/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/authors/"
+                hreflang="fr"
+                href="http://localhost:1313/portfolioHugo/fr/authors/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -83,13 +68,13 @@
     <loc>http://localhost:1313/portfolioHugo/he/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/categories/"
+                hreflang="ar"
+                href="http://localhost:1313/portfolioHugo/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/categories/"
+                hreflang="en"
+                href="http://localhost:1313/portfolioHugo/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -98,40 +83,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="he"
                 href="http://localhost:1313/portfolioHugo/he/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/portfolioHugo/he/home/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="he"
-                href="http://localhost:1313/portfolioHugo/he/home/"
                 />
   </url><url>
     <loc>http://localhost:1313/portfolioHugo/he/series/</loc>
@@ -142,18 +95,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/series/"
+                hreflang="ar"
+                href="http://localhost:1313/portfolioHugo/ar/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/portfolioHugo/fr/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -174,11 +122,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/portfolioHugo/fr/tags/"
                 />
@@ -191,11 +134,6 @@
     <loc>http://localhost:1313/portfolioHugo/he/topics/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/topics/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ar"
                 href="http://localhost:1313/portfolioHugo/ar/topics/"
                 />
@@ -206,40 +144,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/topics/"
+                hreflang="fr"
+                href="http://localhost:1313/portfolioHugo/fr/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="he"
                 href="http://localhost:1313/portfolioHugo/he/topics/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/portfolioHugo/he/home/home/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/portfolioHugo/fr/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/portfolioHugo/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/portfolioHugo/es/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/portfolioHugo/ar/home/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="he"
-                href="http://localhost:1313/portfolioHugo/he/home/home/"
                 />
   </url>
 </urlset>
