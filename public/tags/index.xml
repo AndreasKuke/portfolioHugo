@@ -1,1 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/</link><description>Recent content in Tags on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 01 Jan 2026 09:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/AndreasKuke/portfolioHugo/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Adritian</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/adritian/</link><pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/adritian/</guid><description/></item><item><title>Guide</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/guide/</link><pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/guide/</guid><description/></item><item><title>Search</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/search/</link><pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/search/</guid><description/></item><item><title>Images</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/images/</link><pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/images/</guid><description/></item><item><title>Advanced</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/advanced/</link><pubDate>Thu, 20 Feb 2025 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/advanced/</guid><description/></item><item><title>Pagination</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/pagination/</link><pubDate>Wed, 08 Jan 2025 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/pagination/</guid><description/></item><item><title>Testing</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/testing/</link><pubDate>Wed, 08 Jan 2025 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/testing/</guid><description/></item><item><title>Lorem-Ipsum</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/lorem-ipsum/</link><pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/lorem-ipsum/</guid><description/></item><item><title>Sample</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/sample/</link><pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/sample/</guid><description/></item><item><title>Announcement</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/announcement/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/announcement/</guid><description/></item><item><title>Important</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/important/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/important/</guid><description/></item><item><title>Hugo</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/hugo/</link><pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/hugo/</guid><description/></item><item><title>Sections</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/sections/</link><pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/sections/</guid><description/></item><item><title>Beginner</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/beginner/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/beginner/</guid><description/></item><item><title>Tutorial</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/tutorial/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/tags/tutorial/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>http://localhost:1313/portfolioHugo/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jan 2026 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolioHugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adritian</title>
+      <link>http://localhost:1313/portfolioHugo/tags/adritian/</link>
+      <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/adritian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/portfolioHugo/tags/guide/</link>
+      <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/portfolioHugo/tags/search/</link>
+      <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Images</title>
+      <link>http://localhost:1313/portfolioHugo/tags/images/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/images/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/portfolioHugo/tags/advanced/</link>
+      <pubDate>Thu, 20 Feb 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/advanced/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pagination</title>
+      <link>http://localhost:1313/portfolioHugo/tags/pagination/</link>
+      <pubDate>Wed, 08 Jan 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/pagination/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>http://localhost:1313/portfolioHugo/tags/testing/</link>
+      <pubDate>Wed, 08 Jan 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lorem-Ipsum</title>
+      <link>http://localhost:1313/portfolioHugo/tags/lorem-ipsum/</link>
+      <pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/lorem-ipsum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sample</title>
+      <link>http://localhost:1313/portfolioHugo/tags/sample/</link>
+      <pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/sample/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Announcement</title>
+      <link>http://localhost:1313/portfolioHugo/tags/announcement/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/announcement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Important</title>
+      <link>http://localhost:1313/portfolioHugo/tags/important/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/important/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/portfolioHugo/tags/hugo/</link>
+      <pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sections</title>
+      <link>http://localhost:1313/portfolioHugo/tags/sections/</link>
+      <pubDate>Sat, 20 Jan 2024 14:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/sections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>http://localhost:1313/portfolioHugo/tags/beginner/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/beginner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/portfolioHugo/tags/tutorial/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/tags/tutorial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

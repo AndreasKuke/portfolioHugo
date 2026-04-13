@@ -1,31 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Images on</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/tags/images/</link><description>Recent content in Images on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 15 Mar 2025 10:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/AndreasKuke/portfolioHugo/tags/images/index.xml" rel="self" type="application/rss+xml"/><item><title>Responsive Images</title><link>http://localhost:1313/AndreasKuke/portfolioHugo/blog/responsive-images/</link><pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate><guid>http://localhost:1313/AndreasKuke/portfolioHugo/blog/responsive-images/</guid><description>&lt;p&gt;The Adritian theme includes a &lt;code&gt;responsive-image&lt;/code&gt; shortcode that generates optimized &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; elements with WebP conversion, multiple srcset widths, and lazy loading.&lt;/p&gt;
-&lt;h3 id="basic-usage"&gt;Basic usage&lt;/h3&gt;
-&lt;p&gt;Place your images in the &lt;code&gt;assets/&lt;/code&gt; directory and reference them with the shortcode:&lt;/p&gt;
-&lt;picture&gt;
- &lt;source
- type="image/webp"
- srcset="http://localhost:1313/AndreasKuke/portfolioHugo/images/experience/internet-affairs_hu_afabb3e46b3093ab.webp 400w, http://localhost:1313/AndreasKuke/portfolioHugo/images/experience/internet-affairs_hu_4673f978d255ff1a.webp 800w"
- sizes="100vw"&gt;
- &lt;source
- type="image/png"
- srcset="http://localhost:1313/AndreasKuke/portfolioHugo/images/experience/internet-affairs_hu_692fa664cde9a7a7.png 400w, http://localhost:1313/AndreasKuke/portfolioHugo/images/experience/internet-affairs_hu_78708dd8da3190e1.png 800w"
- sizes="100vw"&gt;
- &lt;img
- src="http://localhost:1313/AndreasKuke/portfolioHugo/images/experience/internet-affairs_hu_692fa664cde9a7a7.png"
- width="400"
- height="400"
- alt="Sample responsive image"
- 
- loading="lazy"
- decoding="async"&gt;
- &lt;/picture&gt;
-
-&lt;p&gt;The shortcode above produces a &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; element with:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WebP srcset&lt;/strong&gt; at 400w, 800w, and 1200w (up to the original image width)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Original format srcset&lt;/strong&gt; at the same widths&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lazy loading&lt;/strong&gt; via &lt;code&gt;loading=&amp;quot;lazy&amp;quot;&lt;/code&gt; and &lt;code&gt;decoding=&amp;quot;async&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CLS prevention&lt;/strong&gt; via &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; attributes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="custom-sizes-hint"&gt;Custom sizes hint&lt;/h3&gt;
-&lt;p&gt;Use the &lt;code&gt;sizes&lt;/code&gt; parameter to give the browser a layout hint for which srcset entry to pick:&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Images on </title>
+    <link>http://localhost:1313/portfolioHugo/tags/images/</link>
+    <description>Recent content in Images on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Mar 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolioHugo/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Responsive Images</title>
+      <link>http://localhost:1313/portfolioHugo/blog/responsive-images/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolioHugo/blog/responsive-images/</guid>
+      <description>&lt;p&gt;The Adritian theme includes a &lt;code&gt;responsive-image&lt;/code&gt; shortcode that generates optimized &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; elements with WebP conversion, multiple srcset widths, and lazy loading.&lt;/p&gt;&#xA;&lt;h3 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h3&gt;&#xA;&lt;p&gt;Place your images in the &lt;code&gt;assets/&lt;/code&gt; directory and reference them with the shortcode:&lt;/p&gt;&#xA;&lt;picture&gt;&#xA;    &lt;source&#xA;      type=&#34;image/webp&#34;&#xA;      srcset=&#34;http://localhost:1313/portfolioHugo/images/experience/internet-affairs_hu_afabb3e46b3093ab.webp 400w, http://localhost:1313/portfolioHugo/images/experience/internet-affairs_hu_4673f978d255ff1a.webp 800w&#34;&#xA;      sizes=&#34;100vw&#34;&gt;&#xA;    &lt;source&#xA;      type=&#34;image/png&#34;&#xA;      srcset=&#34;http://localhost:1313/portfolioHugo/images/experience/internet-affairs_hu_692fa664cde9a7a7.png 400w, http://localhost:1313/portfolioHugo/images/experience/internet-affairs_hu_78708dd8da3190e1.png 800w&#34;&#xA;      sizes=&#34;100vw&#34;&gt;&#xA;    &lt;img&#xA;      src=&#34;http://localhost:1313/portfolioHugo/images/experience/internet-affairs_hu_692fa664cde9a7a7.png&#34;&#xA;      width=&#34;400&#34;&#xA;      height=&#34;400&#34;&#xA;      alt=&#34;Sample responsive image&#34;&#xA;      &#xA;      loading=&#34;lazy&#34;&#xA;      decoding=&#34;async&#34;&gt;&#xA;  &lt;/picture&gt;&#xA;&#xA;&lt;p&gt;The shortcode above produces a &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; element with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;WebP srcset&lt;/strong&gt; at 400w, 800w, and 1200w (up to the original image width)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Original format srcset&lt;/strong&gt; at the same widths&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lazy loading&lt;/strong&gt; via &lt;code&gt;loading=&amp;quot;lazy&amp;quot;&lt;/code&gt; and &lt;code&gt;decoding=&amp;quot;async&amp;quot;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CLS prevention&lt;/strong&gt; via &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; attributes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;custom-sizes-hint&#34;&gt;Custom sizes hint&lt;/h3&gt;&#xA;&lt;p&gt;Use the &lt;code&gt;sizes&lt;/code&gt; parameter to give the browser a layout hint for which srcset entry to pick:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

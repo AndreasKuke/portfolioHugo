@@ -4,39 +4,6 @@ type = "home"
 draft = false
 +++
 
-{{< showcase-section
-    title="Section vedette"
-    subtitle="Sous-titre - vient de <code>home.md</code>"
-    buttonText="Courriel"
-    description="Texte en <strong>gras</strong> et normal. Ceci provient de <code>home.md</code>. Non fourni ? i18n par défaut (pour compatibilité versions >1.7.0)"
-    imgSrc="images/showcase/showcase.png"
-    imgScale="0.5"
-    sectionId="section-vedette"
->}}
-
-{{< platform-links sectionId="liens-plateforme" >}}
-    {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
-    {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}}
-    {{< link icon="linkedin" url="https://www.linkedin.com/in/adrianmoreno/" >}}
-    {{< link icon="square-github" url="https://github.com/zetxek" >}}
-    {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}}
-    {{< link icon="dribbble" url="#" >}}
-    {{< link icon="behance" url="#" >}}
-    {{< link icon="youtube" url="#" >}}
-    {{< link icon="instagram" url="https://www.instagram.com/zetxek/" >}}
-    {{< link icon="square-facebook" url="https://www.facebook.com/zetxek/" >}}
-    {{< link icon="codepen" url="#" >}}
-    {{< link icon="yelp" url="https://www.yelp.com/" >}}
-    {{< link icon="bluesky" url="https://www.bluesky.com/" >}}
-    {{< link icon="threads" url="https://www.threads.net/" >}}
-    {{< link icon="face-smile" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="user" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="quote-left" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="cloud-arrow-down" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}}
-{{< /platform-links >}}
-{{< /showcase-section >}}
-
 {{< about-section
     title="À propos de moi"
     content="En utilisant la <code>syntaxe HTML</code>"
