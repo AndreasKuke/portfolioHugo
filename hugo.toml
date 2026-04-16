@@ -1,5 +1,5 @@
 baseURL = "https://AndreasKuke.github.io/portfolioHugo/"
-title = "Adritian Demo"
+title = "AndreasKuke"
 languageCode = "en"
 
 [pagination]
@@ -66,7 +66,7 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Adritian - a high performance hugo theme by Adrián Moreno'
+title = 'AKM Portfolio'
 description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
 images = ['/img/og-img.png']
 themeColor = '#478079'
@@ -146,7 +146,7 @@ disabled = false
 languageCode = 'en'
 languageDirection = 'ltr'
 languageName = 'English'
-title = ''
+title = 'AKM Portfolio'
 weight = 0
 
 [languages.en.menus]
@@ -158,26 +158,13 @@ weight = 1
 name = 'About'
 URL = '#about'
 weight = 2
-[[languages.en.menus.header]]
-name = 'Skills'
-URL = '/skills'
-weight = 3
-[[languages.en.menus.header]]
-name = 'Portfolio'
-URL = '#client-and-work-section'
-weight = 4
 #  [[languages.en.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"
 #  weight = 4
 
 [[languages.en.menus.header]]
-name = "Showcase"
-URL = "/showcase"
-weight = 5
-
-[[languages.en.menus.header]]
-name = "How to"
+name = "Blogs"
 URL = "/blog"
 weight = 6
 
@@ -272,7 +259,7 @@ mastodon = true
 layout = "sidebar-right"     # options: default (no sidebar), sidebar, sidebar-right
 sidebarWidth = "25"    # percentage width of the sidebar
 narrowContent = true   # if true, limits content width to 720px for better readability
-showCategories = true
+showCategories = false
 showRecentPosts = true
 recentPostCount = 5
 listStyle = "summary"  # options: simple, summary
