@@ -1,0 +1,18 @@
+{{ $pages := sort (where site.RegularPages "Type" "education") "Params.year" "desc" }}
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Learning</p>
+      <h2>{{ .Get "title" | default "Education" }}</h2>
+    </div>
+    <div class="education-grid">
+      {{ range $pages }}
+        <article class="education-card">
+          <p class="education-card__year">{{ .Params.year }}</p>
+          <h3 class="education-card__title">{{ .Params.university | default .Title }}</h3>
+          <p class="education-card__degree">{{ .Params.degree }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

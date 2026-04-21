@@ -2,32 +2,34 @@
 {{ $intro := .Get "intro" | default "Short write-ups, learnings, and updates." }}
 {{ $limit := .Get "limit" | default 4 }}
 {{ $pages := first $limit (where site.RegularPages "Section" "blog") }}
-
-<section class="section rad-animation-group pb-0" id="notes">
+<section class="section" id="notes">
   <div class="container">
-    <div class="row mb-4">
-      <div class="col-12 col-lg-9">
+    <div class="section-heading">
+      <div>
         <h2>{{ $title }}</h2>
-        <p class="lead">{{ $intro }}</p>
+        <p class="section-heading__text">{{ $intro }}</p>
       </div>
     </div>
 
-    <div class="row g-4">
+    <div class="notes-grid">
       {{ range $pages }}
-      <div class="col-12 col-md-6">
-        <article class="h-100 p-4 border rounded-3">
-          <p class="mb-2"><small>{{ .Date.Format "Jan 2, 2006" }}</small></p>
-          <h3 class="h5 mb-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p class="mb-0">{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Plain | truncate 140 }}{{ end }}</p>
+        <article class="notes-card">
+          <p class="notes-card__date">{{ .Date.Format "Jan 2, 2006" }}</p>
+          <h3 class="notes-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.tags }}
+            <div class="post-tags">
+              {{ range first 3 . }}
+                <a class="tag-pill" href="/portfolioHugo/tags/{{ . | urlize }}/">{{ . }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+          <p class="notes-card__summary">{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Plain | truncate 140 }}{{ end }}</p>
         </article>
-      </div>
       {{ end }}
     </div>
 
-    <div class="row mt-4">
-      <div class="col-12">
-        <a class="btn btn-primary" href="{{ "/blog/" | relURL }}">View all notes</a>
-      </div>
+    <div class="section-actions">
+      <a class="button" href="/portfolioHugo/blog/">View all notes</a>
     </div>
   </div>
 </section>

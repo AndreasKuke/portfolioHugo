@@ -1,0 +1,16 @@
+{{ $page := cond (reflect.IsMap .) .Page . }}
+{{ $hideDate := and (reflect.IsMap .) (default false .hideDate) }}
+<article class="post-card">
+  {{ if not $hideDate }}
+    <p class="post-card__date">{{ $page.Date.Format "Jan 2, 2006" }}</p>
+  {{ end }}
+  <h2 class="post-card__title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+  {{ with $page.Params.tags }}
+    <div class="post-tags">
+      {{ range first 4 . }}
+        <a class="tag-pill" href="/portfolioHugo/tags/{{ . | urlize }}/">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+  <p class="post-card__summary">{{ with $page.Summary }}{{ . | plainify }}{{ else }}{{ $page.Plain | truncate 180 }}{{ end }}</p>
+</article>

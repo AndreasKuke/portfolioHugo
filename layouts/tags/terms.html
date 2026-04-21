@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <section class="page-shell">
+    <div class="container page-shell__container">
+      <header class="page-shell__header">
+        <a class="exp-back" href="/portfolioHugo/">← Home</a>
+        <p class="eyebrow">Browse</p>
+        <h1 class="page-shell__title">Tags</h1>
+      </header>
+      <div class="tag-cloud">
+        {{ range .Data.Terms.Alphabetical }}
+          <a class="tag-block" href="{{ .Page.RelPermalink }}">
+            {{ .Page.Title }}<span class="tag-block__count">{{ .Count }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

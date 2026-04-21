@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang | default "en" }}" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || "light";
+      if (theme === "auto") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    {{ partial "site-header.html" . }}
+    <main id="main-content" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "site-footer.html" . }}
+  </div>
+  <script src="{{ "js/site.js" | relURL }}" defer></script>
+</body>
+</html>

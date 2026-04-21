@@ -1,0 +1,112 @@
+.akm-experience-section__title,
+.akm-experience-list__title {
+  margin-bottom: 2rem;
+}
+
+.akm-experience-stack,
+.akm-experience-list__items {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.akm-experience-card,
+.akm-experience-list__item {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(71, 128, 121, 0.16);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 40px rgba(28, 51, 48, 0.08);
+}
+
+.akm-experience-card__duration,
+.akm-experience-list__duration {
+  margin: 0 0 0.4rem;
+  color: rgba(24, 52, 48, 0.72);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.akm-experience-card__role,
+.akm-experience-list__role {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1.1;
+}
+
+.akm-experience-card__company,
+.akm-experience-list__company {
+  margin: 0;
+  color: #3f7d78;
+  font-weight: 700;
+}
+
+.akm-experience-card__body > :first-child,
+.akm-experience-list__content > :first-child {
+  margin-top: 0;
+}
+
+.akm-experience-card__body > h2:first-child,
+.akm-experience-list__content > h2:first-child {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+}
+
+.akm-experience-card__body ul,
+.akm-experience-list__content ul {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.akm-experience-card__body li,
+.akm-experience-list__content li {
+  margin-bottom: 0.85rem;
+}
+
+.akm-experience-card__body li:last-child,
+.akm-experience-list__content li:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .akm-experience-list__item {
+    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+
+html[data-theme="dark"] .akm-experience-card,
+html[data-theme="dark"] .akm-experience-list__item {
+  border-color: rgba(182, 207, 206, 0.18);
+  background: rgba(20, 27, 27, 0.78);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme="dark"] .akm-experience-card__duration,
+html[data-theme="dark"] .akm-experience-list__duration {
+  color: rgba(221, 234, 233, 0.72);
+}
+
+html[data-theme="dark"] .akm-experience-card__company,
+html[data-theme="dark"] .akm-experience-list__company {
+  color: #9dc1bf;
+}
+
+html[data-theme="sand"] .akm-experience-card,
+html[data-theme="sand"] .akm-experience-list__item {
+  border-color: rgba(125, 82, 51, 0.18);
+  background: rgba(251, 245, 237, 0.8);
+  box-shadow: 0 18px 36px rgba(109, 84, 56, 0.08);
+}
+
+html[data-theme="sand"] .akm-experience-card__duration,
+html[data-theme="sand"] .akm-experience-list__duration {
+  color: rgba(78, 64, 49, 0.7);
+}
+
+html[data-theme="sand"] .akm-experience-card__company,
+html[data-theme="sand"] .akm-experience-list__company {
+  color: #7b5233;
+}

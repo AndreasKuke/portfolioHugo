@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <article class="page-shell">
+    <div class="container page-shell__container">
+      <header class="page-shell__header">
+        {{ if not .Params.hideTitle }}
+          <h1 class="page-shell__title">{{ .Title }}</h1>
+        {{ end }}
+      </header>
+      <div class="page-shell__content prose">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+{{ end }}

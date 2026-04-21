@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="page-shell">
+  <div class="container page-shell__container">
+    <div class="page-shell__header">
+      <a class="exp-back" href="/portfolioHugo/#experience-single">← Back to experience</a>
+      {{ with .Params.duration }}
+        <p class="eyebrow">{{ . }}</p>
+      {{ end }}
+      <h1 class="page-shell__title">{{ .Params.jobTitle | default .Title }}</h1>
+      <p class="page-shell__intro">
+        {{ .Params.company }}
+        {{ with .Params.location }} · {{ . }}{{ end }}
+      </p>
+    </div>
+    <div class="page-shell__content prose">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

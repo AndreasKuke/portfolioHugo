@@ -1,0 +1,16 @@
+{{ $img := .Get "imgSrc" }}
+{{ $imgResource := cond $img (resources.Get $img) nil }}
+<section id="about" class="hero section">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">About</p>
+      <h1 class="hero__title">{{ .Get "title" }}</h1>
+      <div class="hero__text prose">{{ .Get "content" | safeHTML }}</div>
+    </div>
+    <div class="hero__media">
+      {{ with $imgResource }}
+        <img class="hero__image" src="{{ .RelPermalink }}" alt="Portrait of Andreas Kuke Marslev">
+      {{ end }}
+    </div>
+  </div>
+</section>

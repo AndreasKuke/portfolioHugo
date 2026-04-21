@@ -32,10 +32,6 @@ draft = false
     hideViewAll=true
 >}}
 
-{{< experience-list
-    title="Experience (as list)"
-    padding=false >}}
-
 {{< notes-preview
     title="Notes & blog"
     intro="A place for short notes, project logs, and things I learn while building."

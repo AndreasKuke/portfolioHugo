@@ -3,6 +3,11 @@ title: "RAG chatbot and how i went about the task"
 date: 2026-04-16
 draft: false
 summary: "Blog post about how i decided to make my RAG chatbot"
+tags:
+  - ai
+  - rag
+  - chatbot
+  - project-log
 ---
 
 

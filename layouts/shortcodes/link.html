@@ -1,0 +1,7 @@
+{{ $url := .Get "url" }}
+{{ $icon := .Get "icon" }}
+{{ $label := cond (eq $icon "linkedin") "LinkedIn" "GitHub" }}
+<a class="social-link" href="{{ $url }}" target="_blank" rel="noreferrer">
+  <span class="social-link__icon">{{ if eq $icon "linkedin" }}in{{ else }}gh{{ end }}</span>
+  <span class="social-link__label">{{ $label }}</span>
+</a>

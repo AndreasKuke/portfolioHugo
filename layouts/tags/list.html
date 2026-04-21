@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="page-shell">
+    <div class="container page-shell__container">
+      <header class="page-shell__header">
+        <a class="exp-back" href="/portfolioHugo/tags/">← All tags</a>
+        <p class="eyebrow">Tag</p>
+        <h1 class="page-shell__title">{{ .Title }}</h1>
+      </header>
+      <div class="post-feed">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ partial "post-card.html" (dict "Page" . "hideDate" true) }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

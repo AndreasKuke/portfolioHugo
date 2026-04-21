@@ -1,0 +1,35 @@
+{{ $title := .Get "title" | default "Experience" }}
+{{ $pages := where site.RegularPages "Type" "experience" }}
+
+<section id="experience-list-shortcode" class="akm-experience-list section section--border-bottom rad-animation-group">
+  <div class="container">
+    <div class="row rad-fade-down">
+      <div class="col-12">
+        <h2 class="akm-experience-list__title">{{ $title }}</h2>
+
+        <div class="akm-experience-list__items">
+          {{ range $pages }}
+            {{ $jobTitle := .Params.jobTitle | default .Title }}
+            {{ $duration := .Params.duration | default .Params.date }}
+            <article class="akm-experience-list__item">
+              <div class="akm-experience-list__sidebar">
+                {{ with $duration }}
+                  <p class="akm-experience-list__duration">{{ . }}</p>
+                {{ end }}
+                <h3 class="akm-experience-list__role">{{ $jobTitle }}</h3>
+                <p class="akm-experience-list__company">
+                  {{ .Params.company }}
+                  {{ with .Params.location }}<span>{{ . }}</span>{{ end }}
+                </p>
+              </div>
+
+              <div class="akm-experience-list__content">
+                {{ .Content }}
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

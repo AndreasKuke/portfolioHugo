@@ -2,9 +2,204 @@
   aside.content-browser {
     display: none !important;
   }
+
+  html[data-bs-theme="sand"] {
+    --bs-body-bg: #e9dfd0;
+    --bs-body-bg-rgb: 233, 223, 208;
+    --bs-body-color: #4e4031;
+    --bs-body-color-rgb: 78, 64, 49;
+    --bs-emphasis-color: #382c20;
+    --bs-emphasis-color-rgb: 56, 44, 32;
+    --bs-secondary-color: rgba(78, 64, 49, 0.78);
+    --bs-tertiary-color: rgba(78, 64, 49, 0.58);
+    --bs-border-color: rgba(102, 81, 58, 0.2);
+    --bs-border-color-translucent: rgba(102, 81, 58, 0.16);
+    --bs-secondary-bg: #efe6d8;
+    --bs-tertiary-bg: #f5ede2;
+    --bs-light-bg-subtle: #f5ede2;
+    --bs-dark-bg-subtle: #d6c5af;
+    --bs-link-color: #8b5e3c;
+    --bs-link-color-rgb: 139, 94, 60;
+    --bs-link-hover-color: #6f482d;
+    --bs-link-hover-color-rgb: 111, 72, 45;
+    --bs-primary: #8b5e3c;
+    --bs-primary-rgb: 139, 94, 60;
+    --bs-primary-text-emphasis: #5c3c25;
+    --bs-primary-bg-subtle: #e8d7c5;
+    --bs-primary-border-subtle: #d2b599;
+    --bs-btn-focus-shadow-rgb: 139, 94, 60;
+  }
+
+  html[data-bs-theme="sand"] body,
+  html[data-bs-theme="sand"] .section,
+  html[data-bs-theme="sand"] .section--contact,
+  html[data-bs-theme="sand"] .blog-sidebar,
+  html[data-bs-theme="sand"] .blog-list,
+  html[data-bs-theme="sand"] .post,
+  html[data-bs-theme="sand"] .post summary,
+  html[data-bs-theme="sand"] article,
+  html[data-bs-theme="sand"] .dropdown-menu,
+  html[data-bs-theme="sand"] .form-control,
+  html[data-bs-theme="sand"] .contact__form .form-control,
+  html[data-bs-theme="sand"] .contact__info,
+  html[data-bs-theme="sand"] .footer,
+  html[data-bs-theme="sand"] .header {
+    color: var(--bs-body-color);
+  }
+
+  html[data-bs-theme="sand"] body {
+    background: linear-gradient(180deg, #f4ece2 0%, #ecdfce 46%, #e5d6c1 100%);
+  }
+
+  html[data-bs-theme="sand"] main,
+  html[data-bs-theme="sand"] .home-container,
+  html[data-bs-theme="sand"] .container,
+  html[data-bs-theme="sand"] .container-education,
+  html[data-bs-theme="sand"] .platform-links.shortcode,
+  html[data-bs-theme="sand"] .row {
+    background: transparent;
+  }
+
+  html[data-bs-theme="sand"] .header .navbar-light .navbar-nav .nav-link,
+  html[data-bs-theme="sand"] .header .navbar .nav-item .nav-link,
+  html[data-bs-theme="sand"] .header .navbar-brand span,
+  html[data-bs-theme="sand"] h1,
+  html[data-bs-theme="sand"] h2,
+  html[data-bs-theme="sand"] h3,
+  html[data-bs-theme="sand"] h4,
+  html[data-bs-theme="sand"] p,
+  html[data-bs-theme="sand"] li,
+  html[data-bs-theme="sand"] .lead {
+    color: var(--bs-body-color);
+  }
+
+  html[data-bs-theme="sand"] .header .navbar-brand span:first-child,
+  html[data-bs-theme="sand"] a,
+  html[data-bs-theme="sand"] .notes-preview__tag,
+  html[data-bs-theme="sand"] .post-title a {
+    color: #7b5233;
+  }
+
+  html[data-bs-theme="sand"] .dropdown-menu,
+  html[data-bs-theme="sand"] .blog-sidebar,
+  html[data-bs-theme="sand"] .post,
+  html[data-bs-theme="sand"] article.h-100,
+  html[data-bs-theme="sand"] .related-posts,
+  html[data-bs-theme="sand"] .social-sharing,
+  html[data-bs-theme="sand"] .content-browser,
+  html[data-bs-theme="sand"] .contact,
+  html[data-bs-theme="sand"] .footer {
+    background-color: rgba(250, 244, 235, 0.72);
+    border-color: rgba(102, 81, 58, 0.16);
+    box-shadow: 0 14px 40px rgba(109, 84, 56, 0.08);
+  }
+
+  html[data-bs-theme="sand"] .btn-primary {
+    --bs-btn-color: #fff8ef;
+    --bs-btn-bg: #8b5e3c;
+    --bs-btn-border-color: #8b5e3c;
+    --bs-btn-hover-color: #fff8ef;
+    --bs-btn-hover-bg: #764d31;
+    --bs-btn-hover-border-color: #764d31;
+    --bs-btn-active-color: #fff8ef;
+    --bs-btn-active-bg: #69442b;
+    --bs-btn-active-border-color: #69442b;
+  }
+
+  html[data-bs-theme="sand"] .btn-light {
+    --bs-btn-color: #4e4031;
+    --bs-btn-bg: #f7efe4;
+    --bs-btn-border-color: #e1cfb8;
+    --bs-btn-hover-color: #382c20;
+    --bs-btn-hover-bg: #efdfca;
+    --bs-btn-hover-border-color: #d2b599;
+  }
+
+  html[data-bs-theme="sand"] .dropdown-item:hover,
+  html[data-bs-theme="sand"] .dropdown-item:focus,
+  html[data-bs-theme="sand"] .dropdown-item.active {
+    background-color: #e8d7c5;
+    color: #382c20;
+  }
+
+  html[data-bs-theme="sand"] .section-experience,
+  html[data-bs-theme="sand"] .section-experience .row,
+  html[data-bs-theme="sand"] .section-experience .experience,
+  html[data-bs-theme="sand"] .section-experience .experience__header,
+  html[data-bs-theme="sand"] .section-experience .experience__description,
+  html[data-bs-theme="sand"] .section-experience .experience__meta {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  html[data-bs-theme="sand"] .section-experience .experience__description {
+    padding-top: 0;
+  }
+
+  html[data-bs-theme="sand"] .section-experience .experience__description > h1:empty {
+    display: none;
+  }
+
+  html[data-bs-theme="sand"] .section-experience .experience__description > h2:first-of-type {
+    margin-top: 0;
+  }
+
+  html[data-bs-theme="sand"] #experience-list-shortcode .experience {
+    align-items: flex-start;
+  }
 </style>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var sandMarkup = `
+      <li class="theme-option-sand">
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="sand" aria-pressed="false">
+          Sand
+        </button>
+      </li>
+    `;
+
+    document.querySelectorAll('.dropdown-menu[id^="theme-dropdown-"]').forEach(function (menu) {
+      if (!menu.querySelector('[data-bs-theme-value="sand"]')) {
+        var autoOption = menu.querySelector('[data-bs-theme-value="auto"]');
+        var autoItem = autoOption ? autoOption.closest('li') : null;
+
+        if (autoItem) {
+          autoItem.insertAdjacentHTML('beforebegin', sandMarkup);
+        } else {
+          menu.insertAdjacentHTML('beforeend', sandMarkup);
+        }
+      }
+    });
+
+    document.querySelectorAll('[data-bs-theme-value="sand"]').forEach(function (button) {
+      if (button.dataset.sandBound === "true") {
+        return;
+      }
+
+      button.dataset.sandBound = "true";
+      button.addEventListener("click", function () {
+        localStorage.setItem("theme", "sand");
+        document.documentElement.setAttribute("data-bs-theme", "sand");
+        document.documentElement.removeAttribute("data-theme-auto");
+
+        document.querySelectorAll('[data-bs-theme-value]').forEach(function (item) {
+          item.classList.remove("active");
+          item.setAttribute("aria-pressed", "false");
+        });
+
+        document.querySelectorAll('[data-bs-theme-value="sand"]').forEach(function (item) {
+          item.classList.add("active");
+          item.setAttribute("aria-pressed", "true");
+        });
+
+        document.querySelectorAll(".current-theme").forEach(function (label) {
+          label.textContent = "Sand";
+        });
+      });
+    });
+  });
+
   window.addEventListener("load", function () {
     var chatbotScript = document.createElement("script");
     chatbotScript.src = "https://unpkg.com/react-stackai@latest/dist/vanilla/vanilla-stackai.js";
