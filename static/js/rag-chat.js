@@ -1,5 +1,5 @@
 (function () {
-  const RAG_URL = window.RAG_WORKER_URL || "http://localhost:3001/chat";
+  const RAG_URL = widget.dataset.url || "http://localhost:3001/chat";
 
   const widget = document.getElementById("rag-chat-widget");
   if (!widget) return;

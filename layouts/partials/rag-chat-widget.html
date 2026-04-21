@@ -1,4 +1,4 @@
-<div id="rag-chat-widget" class="rag-widget">
+<div id="rag-chat-widget" class="rag-widget" data-url="{{ site.Params.ragWorkerUrl | default "http://localhost:3001/chat" }}">
   <button class="rag-toggle" aria-label="Open chat" aria-expanded="false">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     <span>Ask me anything</span>
@@ -17,5 +17,4 @@
     </form>
   </div>
 </div>
-<script>window.RAG_WORKER_URL = {{ site.Params.ragWorkerUrl | default "http://localhost:3001/chat" | jsonify }};</script>
 <script src="{{ "js/rag-chat.js" | relURL }}" defer></script>
