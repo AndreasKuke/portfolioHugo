@@ -1,0 +1,12 @@
+name = "portfolio-rag"
+main = "worker/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# TODO: Replace with your account ID from https://dash.cloudflare.com (right sidebar)
+account_id = "498e60c46547179eddcd592f5de6625d"
+
+[vars]
+# CORS: restrict requests to your portfolio domain.
+# After confirming your GitHub Pages URL, update this.
+ALLOWED_ORIGIN = "https://andreaskuke.github.io"

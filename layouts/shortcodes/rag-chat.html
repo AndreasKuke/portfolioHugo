@@ -17,4 +17,5 @@
     </form>
   </div>
 </div>
+<script>window.RAG_WORKER_URL = {{ site.Params.ragWorkerUrl | default "http://localhost:3001/chat" | jsonify }};</script>
 <script src="/portfolioHugo/js/rag-chat.js" defer></script>
