@@ -1,8 +1,8 @@
 (function () {
-  const RAG_URL = widget.dataset.url || "http://localhost:3001/chat";
-
   const widget = document.getElementById("rag-chat-widget");
   if (!widget) return;
+
+  const RAG_URL = widget.dataset.url || "http://localhost:3001/chat";
 
   const toggle = widget.querySelector(".rag-toggle");
   const panel = widget.querySelector(".rag-panel");
