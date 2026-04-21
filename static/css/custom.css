@@ -1,3 +1,50 @@
+
+
+.section-actions {
+  margin-top: 2rem;
+}
+
+.notes-card {
+  position: relative;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.notes-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.notes-card__title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.social-link {
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button,
+.section-actions a {
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+.button:hover,
+.section-actions a:hover {
+  background: var(--accent-strong);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-read-time {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
 .akm-experience-section__title,
 .akm-experience-list__title {
   margin-bottom: 2rem;
