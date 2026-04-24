@@ -11,6 +11,7 @@
       <a class="site-nav__link" href="/portfolioHugo/#about">About</a>
       <a class="site-nav__link" href="/portfolioHugo/#education">Education</a>
       <a class="site-nav__link" href="/portfolioHugo/#experience-single">Experience</a>
+      <a class="site-nav__link {{ if hasPrefix $current "/portfolioHugo/tasks/" }}is-active{{ end }}" href="/portfolioHugo/tasks/">Tasks</a>
       <a class="site-nav__link {{ if hasPrefix $current "/portfolioHugo/blog/" }}is-active{{ end }}" href="/portfolioHugo/blog/">Blog</a>
     </nav>
 
