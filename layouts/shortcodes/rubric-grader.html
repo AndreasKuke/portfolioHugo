@@ -1,0 +1,186 @@
+{{/*
+  Rubric Grader shortcode
+  Kalder Cloudflare Worker med praktikrapport-tekst og viser struktureret feedback.
+
+  Konfigurér endpoint i hugo.toml under [params]:
+    [params]
+      rubricGraderEndpoint = "https://rubric-grader.<subdomain>.workers.dev"
+*/}}
+
+{{ $endpoint := .Site.Params.rubricGraderEndpoint | default "https://rubric-grader.example.workers.dev" }}
+
+<div class="rubric-grader" data-endpoint="{{ $endpoint }}">
+  <div class="rg-input">
+    <label for="rg-rapport"><strong>Praktikrapport (plain text)</strong></label>
+    <textarea id="rg-rapport" rows="18" placeholder="Indsæt hele rapportteksten her…"></textarea>
+    <div class="rg-controls">
+      <button type="button" id="rg-submit">Vurder rapport</button>
+      <span id="rg-count" class="rg-count">0 tegn</span>
+    </div>
+  </div>
+
+  <div id="rg-status" class="rg-status" aria-live="polite"></div>
+  <div id="rg-result" class="rg-result" hidden></div>
+</div>
+
+<style>
+  .rubric-grader { max-width: 900px; margin: 2rem 0; font-family: inherit; }
+  .rubric-grader textarea {
+    width: 100%; padding: .75rem; font-family: inherit; font-size: .95rem;
+    border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;
+  }
+  .rg-controls { display: flex; align-items: center; gap: 1rem; margin-top: .5rem; }
+  .rg-controls button {
+    padding: .6rem 1.2rem; font-size: 1rem; cursor: pointer;
+    background: #2563eb; color: white; border: none; border-radius: 6px;
+  }
+  .rg-controls button:disabled { background: #9ca3af; cursor: not-allowed; }
+  .rg-count { color: #666; font-size: .85rem; }
+  .rg-status { margin: 1rem 0; color: #444; }
+  .rg-status.error { color: #b91c1c; }
+  .rg-result { margin-top: 1.5rem; }
+  .rg-result h3 { margin-top: 1.5rem; margin-bottom: .5rem; }
+  .rg-overall {
+    background: #f3f4f6; padding: 1rem; border-radius: 8px;
+    border-left: 4px solid #2563eb; margin-bottom: 1.5rem;
+  }
+  .rg-overall .rg-score { font-size: 1.5rem; font-weight: bold; }
+  .rg-overall .rg-level {
+    display: inline-block; padding: .2rem .6rem;
+    border-radius: 4px; font-size: .85rem; font-weight: bold; margin-left: .5rem;
+  }
+  .rg-level.niveau-lav    { background: #fee2e2; color: #991b1b; }
+  .rg-level.niveau-middel { background: #fef3c7; color: #92400e; }
+  .rg-level.niveau-hoej   { background: #dcfce7; color: #166534; }
+  .rg-criterion {
+    border: 1px solid #e5e7eb; border-radius: 6px; padding: .75rem 1rem;
+    margin-bottom: .75rem;
+  }
+  .rg-criterion .rg-criterion-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: .25rem;
+  }
+  .rg-criterion .rg-criterion-head strong { font-size: 1.05rem; }
+  .rg-list { margin: .5rem 0 1rem 1.25rem; padding: 0; }
+  .rg-list li { margin-bottom: .4rem; }
+  details.rg-json summary { cursor: pointer; color: #666; font-size: .85rem; }
+  details.rg-json pre {
+    background: #1e1e1e; color: #d4d4d4; padding: 1rem;
+    border-radius: 6px; overflow-x: auto; font-size: .8rem;
+  }
+</style>
+
+<script>
+(function() {
+  const container = document.querySelector('.rubric-grader');
+  if (!container) return;
+
+  const endpoint = container.dataset.endpoint;
+  const textarea = container.querySelector('#rg-rapport');
+  const button   = container.querySelector('#rg-submit');
+  const count    = container.querySelector('#rg-count');
+  const status   = container.querySelector('#rg-status');
+  const result   = container.querySelector('#rg-result');
+
+  function updateCount() {
+    count.textContent = textarea.value.length.toLocaleString('da-DK') + ' tegn';
+  }
+  textarea.addEventListener('input', updateCount);
+  updateCount();
+
+  function niveauClass(n) {
+    if (!n) return '';
+    const clean = n.toString().toLowerCase()
+      .replace('ø', 'oe').replace('æ', 'ae').replace('å', 'aa');
+    return 'niveau-' + clean;
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+  }
+
+  function renderList(items) {
+    if (!Array.isArray(items) || items.length === 0) return '<p><em>Ingen.</em></p>';
+    return '<ul class="rg-list">' +
+      items.map(i => '<li>' + escapeHtml(i) + '</li>').join('') +
+      '</ul>';
+  }
+
+  function render(data) {
+    const v = data.vurdering || {};
+    const samlet = v.samlet_vurdering || {};
+    const kriterier = v.kriterier || [];
+
+    let html = '';
+
+    html += '<div class="rg-overall">';
+    html += '<span class="rg-score">' + escapeHtml(samlet.score ?? '?') + ' / 100</span>';
+    html += '<span class="rg-level ' + niveauClass(samlet.niveau) + '">'
+          + escapeHtml(samlet.niveau || '?') + '</span>';
+    html += '<p style="margin-top:.5rem;margin-bottom:0;">'
+          + escapeHtml(samlet.hovedbudskab || '') + '</p>';
+    html += '</div>';
+
+    html += '<h3>Feedback pr. kriterium</h3>';
+    kriterier.forEach(k => {
+      html += '<div class="rg-criterion">';
+      html += '<div class="rg-criterion-head">';
+      html += '<strong>' + escapeHtml(k.navn || k.id) + '</strong>';
+      html += '<span class="rg-level ' + niveauClass(k.niveau) + '">'
+            + escapeHtml(k.niveau || '?') + '</span>';
+      html += '</div>';
+      html += '<p>' + escapeHtml(k.feedback || '') + '</p>';
+      html += '</div>';
+    });
+
+    html += '<h3>Styrker</h3>' + renderList(v.styrker);
+    html += '<h3>Svagheder</h3>' + renderList(v.svagheder);
+    html += '<h3>Forbedringsforslag</h3>' + renderList(v.forbedringsforslag);
+    html += '<h3>Spørgsmål til mundtlig dialog</h3>' + renderList(v.eksamensspoergsmaal);
+
+    html += '<details class="rg-json">';
+    html += '<summary>Vis rå JSON-svar</summary>';
+    html += '<pre>' + escapeHtml(JSON.stringify(data, null, 2)) + '</pre>';
+    html += '</details>';
+
+    result.innerHTML = html;
+    result.hidden = false;
+  }
+
+  button.addEventListener('click', async () => {
+    const rapport = textarea.value.trim();
+    if (!rapport) {
+      status.textContent = 'Indsæt en rapport før du trykker vurder.';
+      status.className = 'rg-status error';
+      return;
+    }
+
+    button.disabled = true;
+    status.className = 'rg-status';
+    status.textContent = 'Sender rapport til vurdering… (kan tage 10-30 sekunder)';
+    result.hidden = true;
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ rapport })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || ('HTTP ' + res.status)
+          + (data.detail ? ' – ' + data.detail : ''));
+      }
+      status.textContent = 'Færdig.';
+      render(data);
+    } catch (err) {
+      status.className = 'rg-status error';
+      status.textContent = 'Fejl: ' + err.message;
+    } finally {
+      button.disabled = false;
+    }
+  });
+})();
+</script>

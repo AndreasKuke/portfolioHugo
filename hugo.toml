@@ -69,6 +69,7 @@ target = "assets/css/bootstrap-print.css"
 # TODO: After first wrangler deploy, replace with your real worker URL.
 # Find it at https://dash.cloudflare.com -> Workers & Pages -> portfolio-rag
 ragWorkerUrl = "https://portfolio-rag.andreaskuke.workers.dev/chat"
+rubricGraderEndpoint = "https://rubric-grader.andreaskuke.workers.dev"
 title = 'AKM Portfolio'
 description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
 images = ['/img/og-img.png']

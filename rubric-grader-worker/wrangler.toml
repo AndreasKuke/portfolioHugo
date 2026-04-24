@@ -1,0 +1,8 @@
+name = "rubric-grader"
+main = "index.js"
+compatibility_date = "2024-09-23"
+
+account_id = "498e60c46547179eddcd592f5de6625d"
+
+[vars]
+ALLOWED_ORIGIN = "https://andreaskuke.github.io"
