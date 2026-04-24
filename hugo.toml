@@ -168,6 +168,11 @@ weight = 2
 #  weight = 4
 
 [[languages.en.menus.header]]
+name = "Tasks"
+URL = "/tasks"
+weight = 5
+
+[[languages.en.menus.header]]
 name = "Blogs"
 URL = "/blog"
 weight = 6

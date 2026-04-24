@@ -49,12 +49,6 @@ Hvert kriterium har tre niveauer (lav/middel/høj) med konkrete beskrivelser, s�
 
 Modellen får et præcist JSON-schema og instrueres i at svare **kun** med JSON – ingen markdown-fences, ingen forklarende tekst udenfor.
 
-## Prøv det selv
-
-Indsæt en praktikrapport som plain text herunder og tryk vurder:
-
-{{< rubric-grader >}}
-
 ## Begrænsninger
 
 - Vurderingen er **vejledende** – ikke en erstatning for vejlederens bedømmelse eller den mundtlige eksamen.
