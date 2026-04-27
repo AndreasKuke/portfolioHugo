@@ -17,8 +17,6 @@ pagerSize = 3
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
-  series = "series"
   topic = "topics"
 
 [module]
@@ -88,14 +86,10 @@ name = 'Adrián Moreno Peña'
 url = 'https://www.adrianmoreno.info'
 sameAs = ['https://github.com/zetxek']
 sections = [
-  "showcase",
   "about",
   "education",
   "experience",
-  "client-and-work",
-  "testimonial",
   "contact",
-  "newsletter",
 ]
 # If you want to display an image logo in the header, you can add it here
 # logo = '/img/hugo.svg'
