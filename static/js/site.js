@@ -16,6 +16,21 @@
   applyTheme(initial)
 
   buttons.forEach((button) => {
-    button.addEventListener("click", () => applyTheme(button.dataset.themeChoice))
+    button.addEventListener("click", () => {
+      applyTheme(button.dataset.themeChoice)
+      button.classList.remove("theme-picker__button--bounce")
+      void button.offsetWidth
+      button.classList.add("theme-picker__button--bounce")
+      button.addEventListener("animationend", () => button.classList.remove("theme-picker__button--bounce"), { once: true })
+    })
+  })
+
+  document.querySelectorAll(".site-nav__link").forEach((link) => {
+    link.addEventListener("click", () => {
+      link.classList.remove("site-nav__link--pop")
+      void link.offsetWidth
+      link.classList.add("site-nav__link--pop")
+      link.addEventListener("animationend", () => link.classList.remove("site-nav__link--pop"), { once: true })
+    })
   })
 })()

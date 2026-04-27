@@ -150,6 +150,11 @@
   }
 
   button.addEventListener('click', async () => {
+    button.classList.remove('rg-btn-pop');
+    void button.offsetWidth;
+    button.classList.add('rg-btn-pop');
+    button.addEventListener('animationend', () => button.classList.remove('rg-btn-pop'), { once: true });
+
     const rapport = textarea.value.trim();
     if (!rapport) {
       status.textContent = 'Indsæt en rapport før du trykker vurder.';

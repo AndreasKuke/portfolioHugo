@@ -17,6 +17,19 @@
     open = !open;
     panel.classList.toggle("rag-panel--open", open);
     toggle.setAttribute("aria-expanded", open);
+
+    // bounce the button
+    toggle.classList.remove("rag-toggle--pop");
+    void toggle.offsetWidth; // reflow to restart animation
+    toggle.classList.add("rag-toggle--pop");
+    toggle.addEventListener("animationend", () => toggle.classList.remove("rag-toggle--pop"), { once: true });
+
+    // ripple
+    const ripple = document.createElement("span");
+    ripple.className = "rag-ripple";
+    toggle.appendChild(ripple);
+    ripple.addEventListener("animationend", () => ripple.remove(), { once: true });
+
     if (open && messages.childElementCount === 0) addBubble("assistant", "Hi! Ask me anything about Andreas.");
   });
 
