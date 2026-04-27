@@ -10,6 +10,12 @@
  *   - ALLOWED_ORIGIN     (fx "https://andreaskuke.github.io" eller "*")
  */
 
+import docs from "./docs.json";
+
+const DOC_CONTEXT = docs.length
+  ? docs.map((d) => `### ${d.name}\n${d.content}`).join("\n\n---\n\n")
+  : null;
+
 const RUBRIC = {
   version: "1.0",
   description:
@@ -92,7 +98,7 @@ const RUBRIC = {
 };
 
 function buildSystemPrompt() {
-  return `Du er en erfaren vejleder på Datamatiker-uddannelsen, der giver **vejledende, formativ feedback** på praktikrapporter. Din rolle er IKKE at give en endelig karakter, men at hjælpe den studerende med at se styrker, svagheder og forbedringspotentiale før den mundtlige praktikeksamen.
+  const base = `Du er en erfaren vejleder på Datamatiker-uddannelsen, der giver **vejledende, formativ feedback** på praktikrapporter. Din rolle er IKKE at give en endelig karakter, men at hjælpe den studerende med at se styrker, svagheder og forbedringspotentiale før den mundtlige praktikeksamen.
 
 Du vurderer altid ud fra den udleverede rubric – ikke ud fra egne holdninger eller ekstra krav. Du er konkret, konstruktiv og fair. Du belægger dine pointer med eksempler fra teksten, men du må ikke finde på citater der ikke står der.
 
@@ -103,6 +109,8 @@ Når du vurderer:
 - Brug den studerendes eget sprog og eksempler, når du giver feedback.
 
 Du skal svare UDELUKKENDE med gyldig JSON der matcher det schema du får udleveret. Ingen markdown-kodeblokke, ingen forklarende tekst før eller efter – kun JSON-objektet.`;
+
+  return DOC_CONTEXT ? `${base}\n\n## Supplerende kontekst\n\n${DOC_CONTEXT}` : base;
 }
 
 function buildUserPrompt(rapportTekst) {
