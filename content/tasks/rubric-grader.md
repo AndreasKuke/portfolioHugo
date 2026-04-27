@@ -8,4 +8,6 @@ Indsæt en praktikrapport som plain text herunder og tryk **Vurder rapport**. Mo
 
 Vurderingen er **vejledende** – ikke en erstatning for vejlederens bedømmelse eller den mundtlige eksamen.
 
+<!--more-->
+
 {{< rubric-grader >}}
