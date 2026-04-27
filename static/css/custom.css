@@ -4,6 +4,22 @@
   margin-top: 2rem;
 }
 
+.site-brand--logo {
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.site-brand__logo-first {
+  color: var(--text);
+}
+
+.site-brand__logo-last {
+  color: var(--accent);
+}
+
 .notes-card,
 .post-card {
   position: relative;
