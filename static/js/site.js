@@ -33,4 +33,32 @@
       link.addEventListener("animationend", () => link.classList.remove("site-nav__link--pop"), { once: true })
     })
   })
+
+  // Hamburger menu
+  const hamburger = document.querySelector(".site-hamburger")
+  const mobileMenu = document.getElementById("site-mobile-menu")
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = hamburger.getAttribute("aria-expanded") === "true"
+      hamburger.setAttribute("aria-expanded", !isOpen)
+      mobileMenu.hidden = isOpen
+    })
+
+    // Close on mobile nav link click
+    mobileMenu.querySelectorAll(".site-mobile-nav__link").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.setAttribute("aria-expanded", "false")
+        mobileMenu.hidden = true
+      })
+    })
+
+    // Close on outside click
+    document.addEventListener("click", (e) => {
+      if (!hamburger.closest(".site-header").contains(e.target)) {
+        hamburger.setAttribute("aria-expanded", "false")
+        mobileMenu.hidden = true
+      }
+    })
+  }
 })()

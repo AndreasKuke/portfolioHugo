@@ -5,6 +5,12 @@
       <span class="site-brand__logo"><span class="site-brand__logo-first">Andreas</span><span class="site-brand__logo-last">Kuke</span></span>
     </a>
 
+    <button class="site-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-mobile-menu">
+      <span class="site-hamburger__bar"></span>
+      <span class="site-hamburger__bar"></span>
+      <span class="site-hamburger__bar"></span>
+    </button>
+
     <nav class="site-nav" aria-label="Primary navigation">
       <a class="site-nav__link {{ if eq $current "/portfolioHugo/" }}is-active{{ end }}" href="/portfolioHugo/">Home</a>
       <a class="site-nav__link" href="/portfolioHugo/#about">About</a>
@@ -15,6 +21,22 @@
     </nav>
 
     <div class="theme-picker" aria-label="Theme picker">
+      <button class="theme-picker__button" data-theme-choice="light" type="button">Light</button>
+      <button class="theme-picker__button" data-theme-choice="dark" type="button">Dark</button>
+      <button class="theme-picker__button" data-theme-choice="sand" type="button">Sand</button>
+    </div>
+  </div>
+
+  <div class="site-mobile-menu" id="site-mobile-menu" hidden>
+    <nav class="site-mobile-nav" aria-label="Mobile navigation">
+      <a class="site-mobile-nav__link {{ if eq $current "/portfolioHugo/" }}is-active{{ end }}" href="/portfolioHugo/">Home</a>
+      <a class="site-mobile-nav__link" href="/portfolioHugo/#about">About</a>
+      <a class="site-mobile-nav__link" href="/portfolioHugo/#education">Education</a>
+      <a class="site-mobile-nav__link" href="/portfolioHugo/#experience-single">Experience</a>
+      <a class="site-mobile-nav__link {{ if hasPrefix $current "/portfolioHugo/tasks/" }}is-active{{ end }}" href="/portfolioHugo/tasks/">Tasks</a>
+      <a class="site-mobile-nav__link {{ if hasPrefix $current "/portfolioHugo/blog/" }}is-active{{ end }}" href="/portfolioHugo/blog/">Blog</a>
+    </nav>
+    <div class="site-mobile-theme" aria-label="Theme picker">
       <button class="theme-picker__button" data-theme-choice="light" type="button">Light</button>
       <button class="theme-picker__button" data-theme-choice="dark" type="button">Dark</button>
       <button class="theme-picker__button" data-theme-choice="sand" type="button">Sand</button>
