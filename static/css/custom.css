@@ -4,17 +4,21 @@
   margin-top: 2rem;
 }
 
-.notes-card {
+.notes-card,
+.post-card {
   position: relative;
   transition: border-color 0.18s, box-shadow 0.18s;
+  cursor: pointer;
 }
 
-.notes-card:hover {
+.notes-card:hover,
+.post-card:hover {
   border-color: var(--accent);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.notes-card__title a::after {
+.notes-card__title a::after,
+.post-card__title a::after {
   content: '';
   position: absolute;
   inset: 0;
