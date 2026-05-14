@@ -13,7 +13,7 @@ tags:
 
 Dagens skoleopgave handlede om LLM API-integration: byg en applikation hvor en sprogmodel indgår som en funktionel komponent i et rigtigt dataflow – ikke bare i et chatvindue.
 
-Opgaven var at lave en AI-drevet vurdering af praktikrapporter ud fra en rubric udledt af studieordningens kravmateriale.
+Opgaven var at lave en AI-drevet vurdering af praktikrapporter ud fra en rubric udledt af studieordningens kravmateriale. (Første link "Læringsmål" fungerede ikke)
 
 ## Arkitektur
 
@@ -24,7 +24,7 @@ Browser → POST { rapport } → Cloudflare Worker → Anthropic API
                           ← JSON vurdering    ←
 ```
 
-Workeren holder rubricen, bygger system- og userprompts, kalder Claude, og returnerer en struktureret JSON-vurdering. Brugeren ser aldrig API-nøglen.
+Workeren holder rubricen, bygger system- og userprompts, kalder Claude, og returnerer en struktureret JSON-vurdering. Brugeren ser aldrig API-nøglen. (Very secure)
 
 ## Rubricen
 

@@ -11,7 +11,7 @@ tags:
   - project-log
 ---
 
-After getting the RAG chatbot running locally with an Express server, the next problem was obvious — it only worked on my machine. The portfolio is a static site hosted on GitHub Pages, so there's nowhere to run a backend.
+After getting the RAG chatbot running locally with an Express server, there was a problem though — it only worked on my machine. The portfolio is a static site hosted on GitHub Pages, so there's nowhere to run a backend.
 
 I asked Claude Code how to fix this and it gave me three options:
 
@@ -19,13 +19,13 @@ I asked Claude Code how to fix this and it gave me three options:
 - Vercel or Netlify (move the whole site)
 - Call the API directly from the browser (bad idea, exposes the API key)
 
-I went with Cloudflare Workers. Free tier, no need to move the site, and the API key stays secure on the server side.
+I went with Cloudflare Workers. using the 'Free tier', no need to move the site, and the API key stays secure on the server side, and doesn't get exposed.
 
 ## What changed
 
-The Express server (`rag/server.js`) got replaced by a Cloudflare Worker (`worker/index.js`). The logic is basically the same — take a message, load the docs, call Claude, stream the response back. The difference is it runs on Cloudflare's edge instead of my laptop.
+The Express server (`rag/server.js`) got replaced by a Cloudflare Worker (`worker/index.js`). The logic is basically the same — take a message, load the docs, call Claude, stream the response back. The difference is it runs on Cloudflare's edge instead of my computer.
 
-For the RAG documents, Workers don't have a filesystem, so I wrote a small build script that reads everything from `rag/docs/` and bundles it into a `docs.json` file before deploying. That JSON gets baked into the worker.
+For the RAG documents, Workers don't have a filesystem, so I asked Claude to help with a script that reads everything from `rag/docs/` and bundles it into a `docs.json` file before deploying. That JSON gets baked into the worker.
 
 ## GitHub Actions
 
@@ -38,13 +38,11 @@ Two jobs running in parallel, two secrets needed: `CLOUDFLARE_API_TOKEN` and `AN
 
 ## Problems I ran into
 
-Getting the Cloudflare API token right took a few tries. The first token had no permission policies attached, so it failed with a 400 auth error. The fix was using the **Edit Cloudflare Workers** template when creating the token — that pre-fills everything correctly.
+Getting the Cloudflare API token right took a few tries. The first token had no permission policies attached, so it failed with a 400 auth error. The fix was using the **Edit Cloudflare Workers** template when creating the token — that fixed it.
 
-The workers.dev subdomain also needed to be registered manually before the first deploy would succeed. Easy to miss if you've never used Workers before.
+The workers.dev subdomain also needed to be registered manually before the first deploy would succeed. This also took a few tries with a lot of errors.
 
-The chat widget URL was getting mangled by Hugo's HTML minifier. It was appending a literal `"` character to the end of the URL, breaking the fetch request. Fixed it by passing the URL as a `data-` attribute on the widget div instead of injecting it via an inline script tag.
-
-Finally, the Anthropic API key I had saved didn't have any credits attached to it. Had to buy $5 of credits on platform.claude.com and generate a fresh key.
+Finally, the Anthropic API key I had saved didn't have any credits attached to it, even though i had bought $5 worth of credits, but since i generated the key before adding it, i had to generate another one.
 
 ## End result
 
