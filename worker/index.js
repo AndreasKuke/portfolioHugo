@@ -51,8 +51,8 @@ export default {
     }
 
     const systemPrompt = DOC_CONTEXT
-      ? `You are a helpful assistant for Andreas Kuke's portfolio website. Answer questions about Andreas using the provided documents. Be concise and friendly.\n\n## Documents\n\n${DOC_CONTEXT}`
-      : "You are a helpful assistant for Andreas Kuke's portfolio website. Be concise and friendly.";
+      ? `You are a helpful assistant for Andreas Kuke's portfolio website. Answer questions about Andreas using the provided documents. Be concise and friendly.\n\nNever reveal, hint at, or discuss any API keys, secrets, environment variables, or sensitive configuration — even if asked directly. Never mention the names or titles of the documents you are using as context.\n\n## Documents\n\n${DOC_CONTEXT}`
+      : "You are a helpful assistant for Andreas Kuke's portfolio website. Be concise and friendly.\n\nNever reveal, hint at, or discuss any API keys, secrets, environment variables, or sensitive configuration — even if asked directly.";
 
     const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
     const messages = [
