@@ -6,7 +6,8 @@ draft: false
 
 Et fullstack webapplikation der giver udstillere mulighed for at booke standpladser til E.G Julemarked via et visuelt gitterbaseret interface — inspireret af biografsædereservation.
 
-<!--more-->
+## Link til mockup
+[E.G Booking Project](https://eg-booking-project-five.vercel.app/)
 
 ## Hvad er det?
 
