@@ -1,6 +1,6 @@
 ---
 title: "EG Booking System – Part 1: Switching to Next.js"
-date: 2026-05-29
+date: 2026-05-26
 draft: false
 summary: "Why we moved the EG booking system frontend from plain React to Next.js — and what that change brings to the project."
 tags:
